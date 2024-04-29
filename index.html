@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Choose EV</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+<title>Your Topic Here</title>
+
+<body>
+
+  <div class="front-page">
+    <nav class="f-header">
+      <a href="" class="car-logo"><img src="images/icons8-car.gif">
+        <div class="nav-links">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#section-three">Green</a></li>
+            <li><a href="#section-four">Oil Depedency</a></li>
+            <li><a href="#section-five">Happy Streets</a></li>
+            <li><a href="#section-six">Slideshow</a></li>
+            <button id="darkmode-button">
+              Darkmode
+            </button>
+          </ul>
+          
+        </div>
+    </nav>
+    <div class="front-page-text">
+      <h1 class="main-title">Change The World With EV</h1>
+      <p>"Now is the perfect time to have an EV Quote"</p>
+      <button class="fp-button" onclick= toggleLogin() >Contact Me</button>
+    </div>
+  </div>
+
+  <div class="popup-1" id="popup-1-1">
+    <div class="overlay-1"></div>
+    <div class="content-1">
+      <div class="close-btn" onclick= "toggleLogin()">&times;</div>
+      <div class="form-1">
+        <h2> Contact Me</h2>
+          <input type="text" id="name-1" placeholder="Your Name">
+          <input type="text" id="email-1" placeholder="Your Email">
+        <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
+          <button class="submit-button" onclick="validform()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-two">
+    <div class="section-two-text">
+      <p class>Lets explore some of the many reasons why electric vehicles drive positive change in communities</p>
+      <img src="images/thecarmove.gif">
+    </div>
+  </div>
+
+  <div id="section-three">
+    <div class="section-three-content">
+      <div class="section-three-title-text">
+        <h2 class>Cleaner Air: Healthier Lives</h2>
+        <p>"EV reduce air pollution and contribute to a healthier environment"</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-three-quote-text">
+    <div class="s3-quote">
+      “EVs help the environment because they produce much less air and climate pollution than vehicles that run on
+      gasoline.” -link.springer
+    </div>
+
+    <div class="s3-paragraph">
+      Electric vehicles (EVs) significantly benefit the environment by producing minimal air and climate pollution
+      compared to gasoline-powered vehicles. With zero tailpipe emissions, EVs contribute to improved air quality in
+      urban areas, reducing the release of harmful pollutants associated with traditional vehicles. Additionally, the
+      potential for lower greenhouse gas emissions arises from the use of electricity, especially when sourced from
+      renewable energy. EVs not only enhance local air quality but also play a part in the broader transition toward
+      cleaner energy, aligning with global efforts to combat climate change.
+    </div>
+  </div>
+  <div id="section-four">
+    <div class="section-three-content">
+      <div class="section-three-title-text">
+        <h2 class>Breaking Free: Less Dependence on Oil</h2>
+        <p>"Social and economic implications of reducing reliance on oil."</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-three-quote-text">
+    <div class="s3-quote">
+      “Oil also produces distillate which is used to create diesel fuel for trucks, trains, boats, barges, and home
+      heating oil. As a non-fuel, oil is also used as a component in the production of several household items,
+      including: Hygiene Products, Clothes, Soap, PVC, Cosmetics, Outdoor Gear, Phones, Toys, and Luggage.”
+      -boem.gov
+    </div>
+
+    <div class="s3-paragraph">
+      Electric vehicles (EVs) are a modern way to travel powered by rechargeable batteries, cutting down on harmful
+      emissions and helping the environment. These cars use advanced batteries and come in various models from small
+      cars to SUVs and trucks. To encourage more people to use EVs, there's a need for more places to charge them.
+      Governments also give rewards to people who choose electric, making it an eco-friendly and cost-effective choice.
+      As technology improves, electric vehicles are changing the car industry and lessening our reliance on fossil
+      fuels.
+    </div>
+  </div>
+  <div id="section-five">
+    <div class="section-three-content">
+      <div class="section-three-title-text">
+        <h2 class>Quieter Streets, Happier Neighborhoods</h2>
+        <p>"EVs contribute to quieter and more pleasant communities by reducing noise pollution."</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-three-quote-text">
+    <div class="s3-quote">
+      “Unlike traditional vehicles, EVs operate quietly as they don't rely on internal combustion engines.” -energy5
+    </div>
+
+    <div class="s3-paragraph">
+      Electric vehicles (EVs) stand out because they operate quietly, unlike traditional cars with noisy engines. This
+      silence creates a peaceful city environment and a more enjoyable driving experience. However, it has raised
+      concerns about pedestrian safety, leading to discussions and rules to make EVs produce sounds, especially at low
+      speeds, to alert pedestrians. This silent operation is a unique feature that sets electric vehicles apart in the
+      transportation world.
+    </div>
+  </div>
+
+  <div id="section-six">
+    <div class="section-three-content">
+      <div class="section-three-title-text">
+        <h2 class>SLEEK, STYLISH, SPEED</h2>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/Taycan-Main.jpg" style="width:100%">
+      <div class="text">Porsche Taycan</div>
+    </div>
+
+    <div class="mySlides fade">
+      
+      <img src="images/LucidAir.jpg" style="width:100%">
+      <div class="text">Lucid Air</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/AudiEtronnew.jpg" style="width:100%">
+      <div class="text">Audi E tron</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/bmwi5.jpg" style="width:100%">
+      <div class="text">BMW i5</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/mustangmache.jpg" style="width:100%">
+      <div class="text">Mustang Mach e</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/mercedes_benz_eqc.jpg" style="width:100%">
+      <div class="text">Mercedes EQC</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/tesla plaid.jpg" style="width:100%">
+      <div class="text">Tesla</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/Hyundai IONIQ 5.jpg" style="width:100%">
+      <div class="text">Hyundai IONIQ 5</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/volkswagen-id4.jpg" style="width:100%">
+      <div class="text">Volkswagen ID 4</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/Kia EV9.jpg" style="width:100%">
+      <div class="text">KIA EV9 GT</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+  </div>
+
+  <div class="section-six-survey">
+    <p class = "survey-question">What are your 3 favorite cars from the slideshow?</p>
+    <div class="survey-buttons">
+    <div class= "survey-answers">
+      <button class="survey-button">
+        Porsche Taycan
+      </button>
+
+      <button class="survey-button">
+        Lucid Air
+      </button>
+      <button class="survey-button">
+        Audi E tron
+      </button>
+      <button class="survey-button">
+        BMW i5
+      </button>
+      <button class="survey-button">
+        Mustang Mach e
+      </button>
+      <button class="survey-button">
+        Mercedes EQC
+      </button>
+      <button class="survey-button">
+        Tesla
+      </button>
+      <button class="survey-button">
+        Hyundai IONIQ 5
+      </button>
+      <button class="survey-button">
+        Volkwagen ID 4
+      </button>
+      <button class="survey-button">
+        KIA EV9 GT-Line
+      </button>
+    </div>
+      <button class="survey-submit"> Submit </button>
+    </div>
+  </div>
+
+
+  <div class="petition-container">
+      <div class="left-column">
+          <p>By signing up for our electric vehicle petition, you're igniting a powerful movement towards a cleaner, greener future. Your support is the driving force behind our mission to revolutionize transportation and combat climate change. Together, we're paving the way for a world where electric vehicles reign supreme, reducing emissions and preserving our planet for generations to come. Join us in accelerating this electrifying journey towards sustainability, one signature at a time.Sign our petition now to make a difference!</p>
+          <div class="form">
+              <input type="text" id="name" placeholder="Your Name">
+              <input type="text" id="email" placeholder="Your Email">
+              <button class="signButton" onclick="validateForm()">Sign Now</button>
+          </div>
+      </div>
+
+      <div class="right-column">
+          <ul class="signature-list" id="signatureList">
+          </ul>
+      </div>
+  </div>
+
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick= "togglePopup()">&times;</div>
+        <h1>Thank you for signing!</h1>
+        <p>I appreciate you very much.</p>
+        <img id= "popcar" src= "images/car-middle.gif">
+      </div>
+    </div>
+
+    
+    
+  <footer>
+    <div class="footer-content">
+      <p class = "contact">Contact: BundeeBoodee@gmail.com</p>
+      <div class = "socials">
+        <a href = "https://www.linkedin.com/in/bettino-gaussaint/"><img src = "images/linkedin_logo.png"></a>
+        <a href = "https://github.com/bgaussaint"><img src = "images/github_logo.png"></a>
+        <a href = "https://www.instagram.com/benjamin.gaussaint/"><img src = "images/instagramlogo.png"></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

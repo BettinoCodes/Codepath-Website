@@ -1,0 +1,701 @@
+*{
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+body{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin: 0px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+body.dark-mode{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding-top: 0px;
+  overflow-x: hidden;
+}
+
+:root{
+  --primary-color: #ffffff;
+  --secondary-color: #000624;
+}
+
+.front-page {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/wallpaperVeh.jpg);
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+
+.f-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.car-logo {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.nav-links ul li:after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover:after {
+  width: 100%;
+}
+
+.front-page-text {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.front-page-text main-title {
+  font-size: 60px;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.front-page-text p {
+  font-size: 35px;
+  font-style: italic;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.fp-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fp-button:hover {
+  border: 1px solid #00c4f5;
+  background: #00c4f5;
+  transition: 1s;
+}
+
+.section-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  flex-direction: column;
+}
+
+
+.section-two-text {
+  width: 90%;;
+  font-size: 45px;
+  text-align: center;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.section-three-title-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.section-three-title-text h2 {
+  font-size: 50px;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  transition: 1s ease;
+}
+
+.section-three-title-text p {
+  font-size: 40px;
+  font-style: italic;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  transition: 1s ease;
+  
+}
+
+.section-three-quote-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+
+.s3-quote {
+  font-size: 35px;
+  font-style: bold;
+  display: inline-block; 
+  max-width: 90%;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 5%;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.s3-paragraph {
+  font-size: 30px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+#section-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/tesla_model_s_2016.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+
+}
+
+#section-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/electriccharge.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+
+}
+
+#section-five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/driving-tesla-model-s.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#section-six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/Longest-Range-Electric-Cars-of-2020.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.section-six-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #0000a3;
+  width: 950px;
+  font-size: 45px;
+  margin-bottom: 20px;
+  left: 50%;
+  transform: translate(25%, 25%);
+}
+
+mySlides {
+  display: none;
+}
+
+img{
+  vertical-align: middle;
+}
+
+.slideshow-container{
+  max-width: 80%;
+  max-height: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 15px;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+  background-color: black;
+}
+
+.text{
+  color: white;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 7%;
+}
+
+footer {
+  background-color: #0028c7; 
+  color: #fff;
+  padding: 20px 0; 
+  text-align: center; 
+  margin-top: 5%;
+  height: 100px;
+}
+
+.footer-content {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+#darkmode-button{
+  background-color: #0028c7;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#darkmode-button:hover{
+  background-color: #ffffff;
+  color: var(--secondary-color);
+}
+
+.section-six-survey {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.survey-question {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.survey-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.survey-button {
+  background-color: #0028c7;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.survey-button.selected {
+  background-color: green;
+  border-color: green;
+}
+
+.survey-button:hover {
+  background-color: #1486ff;
+  border-color: white;
+}
+
+.survey-submit {
+  background-color: #0028c7;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.survey-submit:hover {
+  background-color: #1486ff;
+}
+
+.petition-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left-column {
+    width: 50%;
+    margin: 2%;
+}
+
+.right-column {
+    width: 45%;
+    margin: 2%;
+}
+
+.form {
+    border: 1px solid #00bfff;
+    width: 100%; 
+    padding: 10px;
+    margin : 2%; 
+    border-radius: 20px;
+}
+
+.form input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+
+.form-1 {
+    border: 1px solid #00bfff;
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    left: -10px;
+}
+
+.form-1 input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #00ccff;
+}
+
+#message {
+    width: 90%;
+    height: 140px;
+    margin-top: 5px;
+    border: 2px solid #00ccff;
+    border-radius: 5px;
+}
+
+#name-1, #email-1 {
+  width: 85%;
+  border-radius: 10px;
+}
+
+
+.clear {
+  background: white;
+}
+.error {
+  border-style: solid;
+  border-width: 2 px;
+  border-color: red;
+  background: pink;
+}
+
+.signButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signButton:hover {
+    background-color: #0056b3;
+    border-color: white; 
+    transition: border-color 0.3s; 
+}
+
+.signature-list {
+  margin-top: 10px; 
+}
+
+.signature-list li {
+    list-style: none;
+    margin-bottom: 5px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    animation: moveSideToSide 3s ease-in-out infinite;
+}
+
+
+.s3-quote {
+  opacity: 0;
+  transform: translateX(-100%); 
+  transition: 1s;
+}
+
+.s3-paragraph {
+  transform: translateX(100%); 
+  transition: 1s;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.section-three-title-text h2:hover {
+  font-size: 60px; 
+}
+
+.section-three-title-text p:hover {
+  font-size: 45px; 
+}
+
+.popup .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(93, 91, 91, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 600px;
+  height: 400px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: black;
+  
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#popcar{
+  width: 150px;
+  height: auto;
+}
+
+@keyframes moveSideToSide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px); 
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes circularMotion {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.popup #popcar {
+  animation: circularMotion 5s linear infinite; 
+}
+
+.popup-1 .overlay-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(93, 91, 91, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup-1 .content-1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 600px;
+  height: 500px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: black;
+  border-radius: 20px;
+}
+
+.popup-1 .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup-1.active .overlay-1 {
+  display: block;
+}
+
+.popup-1.active .content-1 {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
